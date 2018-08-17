@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <ul>
+    {{#movies}}
+        <li>{{title}}</li>
+    {{/movies}}
+    </ul>
+    
+    <form action="/movies/add" method="POST">
+        <p>
+          title: <input type="text" name="title" value=""/>
+          year: <input type="text" name="year" value=""/>
+          imdb: <input type="text" name="imdb" value=""/>
+        </p>
+        <input type="submit" value="Submit"/>
+      </form>
+</body>
+</html>
